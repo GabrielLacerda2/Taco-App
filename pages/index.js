@@ -102,7 +102,9 @@ export default function Home(object) {
       tabelaNutrientes={tabelaNutrientes}
       setTabelaNutrientes={setTabelaNutrientes}
       numIng={numIng}
+      setNumIng={setNumIng}
       pesoTotal={pesoTotal}
+      setPesoTotal={setPesoTotal}
      />
      <ListaNutrientes 
      tabelaNutrientes={tabelaNutrientes}

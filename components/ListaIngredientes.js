@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Button, Checkbox, Form, Input, Dropdown, Label,Icon } from 'semantic-ui-react'
+import calculaNutrientes from '../controllers/calculaNutrientes';
 import Popup from 'reactjs-popup';
 
 function ListaIngredientes (props) {
@@ -18,7 +19,6 @@ function ListaIngredientes (props) {
             return accumulator;
           }, 0)
           props.setPesoTotal(qtdtotal);
-
      }
      
      return(
