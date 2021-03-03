@@ -1,0 +1,488 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+tr{
+  height: 23px;
+}
+td{
+  height: 23px; 
+  width: 300px;
+  padding: 3px;
+  font-size: 12px;
+ 
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+* {
+  box-sizing: border-box;
+}
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.all-content{
+  width: 100%;
+  height: 100%;
+}
+
+.receita-all{
+  padding: 20px;
+}
+
+.content-list{
+width: 500vw;
+}
+
+.content-receita{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.form-info-receita{
+  margin-right: 30px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70vw;
+  margin-bottom: 20px;
+ 
+}
+
+.qtd{
+  width: 100px;
+}
+
+.ing{
+  width: 600px;
+  margin-right: -50px;
+}
+
+.valor-energetico-td{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-info{
+  margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-all{
+  margin: 0 auto;
+}
+
+.header{
+  background-image:url(../img/alimetos.jpg);   
+  background-position: center;
+  background-repeat:repeat-x;
+  width: 100vw;
+  height: 25vh;  
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.content-header{
+  background-color: rgba(176, 176, 176, 0.1);
+  -webkit-backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(1.5px);
+  opacity: 20;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  color:whitesmoke;
+  font-weight: 800;
+  filter: blur(0px);
+}
+.navbar-header{
+  width:30%;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.lista-options{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+  text-decoration: none;
+}
+.list-ing{
+  margin: 0;
+  padding: 10px;
+}
+.li-ingrediente{
+  display: flex;
+  margin-top: 10px;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.li-ingrediente-pop{
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+  padding: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.li-ingrediente-pop p{
+  margin: 0;
+}
+
+.content-ing-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+
+.li-nutriente1{
+  display: flex;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 500px;
+ 
+}
+
+.li-nutriente0{
+  display: flex;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  
+}
+
+.main-tabelanutri{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.form-dados-tabela{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 30vw;
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  
+}
+
+.linkinho{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-add{
+  width: 200px;
+  margin-left: 203px;
+}
+
+.trigger-ing{
+  margin:0 auto;
+  cursor: pointer;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: black;
+    color: white;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+
+.modal{
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 10px 0 60px 0;
+  border-radius: 3px;
+}
+
+.modal ul{
+  margin: 0;
+ 
+}
+
+
+.content-add-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 25vh;
+}
+
+.content-table{
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 600px) {
+tr{
+  height: 10px;
+}
+td{
+  height: 10px; 
+  width: 300px;
+  padding: 3px;
+  font-size: 9px;
+ 
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.valor-energetico-td{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10px;
+}
+.gerar-tabela{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-dados-tabela{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  justify-content: center;
+  width: 60vw;  
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.header{
+  background-image:url(../img/alimetos.jpg);   
+  background-position: center;
+  background-repeat:repeat-x;
+  width: 100vw;
+  height: 20vh;  
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.content-header{
+  background-color: rgba(176, 176, 176, 0.1);
+  -webkit-backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(1.5px);
+  opacity: 20;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  color:whitesmoke;
+  font-weight: 800;
+  filter: blur(0px);
+}
+.navbar-header{
+  width:30%;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.content-info{
+  margin-right: 40px;
+}
+
+.li-ingrediente{
+  display: flex;
+  margin-top: 10px;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 80vw;
+}
+
+.li-nutriente1{
+  display: flex;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 60vw;
+ 
+}
+
+.li-nutriente0{
+  display: flex;
+  padding:5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 60vw;
+  
+}
+
+.add-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-content{
+  width: 100%;
+  height: 100%;
+}
+
+.receita-all{
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-list{
+width: 500vw;
+}
+
+.content-receita{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form-info-receita{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85vw;
+}
+
+.qtd{
+  width: 100px;
+  margin-top: 5%;
+}
+
+.ing{
+  width: 85vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.trigger-ing{
+  margin:0 auto;
+  cursor: pointer;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: black;
+    color: white;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+
+.list-ing{
+  margin: 0;
+  padding: 0;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  padding: 10px;
+}
+}
+
