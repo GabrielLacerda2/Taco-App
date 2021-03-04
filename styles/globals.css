@@ -6,18 +6,43 @@ body {
 }
 tr{
   height: 23px;
+
 }
 td{
   height: 23px; 
-  width: 300px;
-  padding: 3px;
-  font-size: 12px;
- 
+  width: 200px;
+  padding: 3px 3px 3px 20px;
+  font-size: 14px;
 }
 table{
-  border: 1px solid black;
+  border: none;
   border-collapse: collapse;
+  background-color: white;
+  margin-right: 10px;
 }
+tbody{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+#tbody-nutrientes{
+  border: none;
+}
+.vd{
+  width: 150px;
+  text-align: center;
+  padding: 0;
+}
+.nutri-td{
+  width: 160px;
+}
+.tabela-header{
+  padding: 3px;
+  text-align: center;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -84,7 +109,7 @@ width: 500vw;
 }
 
 .table-all{
-  margin: 0 auto;
+  background-color: white;
 }
 
 .header{
@@ -199,7 +224,7 @@ width: 500vw;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
-  width: 30vw;
+  width: 40vw;
   padding: 20px;
   background-color: whitesmoke;
   margin-top: 50px;
@@ -271,6 +296,10 @@ width: 500vw;
 }
 
 .content-table{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 100px;
 }
 @media only screen and (max-width: 600px) {
@@ -285,8 +314,12 @@ td{
  
 }
 table{
-  border: 1px solid black;
+  border: none;
   border-collapse: collapse;
+  margin-bottom: 10px;
+}
+#tbody-nutrientes{
+  border: none;
 }
 .valor-energetico-td{
   display: flex;
@@ -483,6 +516,14 @@ width: 500vw;
   background-color: whitesmoke;
   border-radius: 3px;
   padding: 10px;
+}
+
+.content-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
 }
 }
 
