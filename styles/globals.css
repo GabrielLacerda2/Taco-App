@@ -59,6 +59,10 @@ input::-webkit-calendar-picker-indicator {
   padding: 20px;
 }
 
+.popup-overlay {
+  background-color: rgba(0,0,0,0.2);
+}
+
 .content-list{
 width: 500vw;
 }
@@ -277,7 +281,8 @@ width: 500vw;
 .modal{
   text-align: center;
   background-color: whitesmoke;
-  padding: 10px 0 60px 0;
+  padding: 10px 5px 60px 5px;
+  min-width:400px;
   border-radius: 3px;
 }
 

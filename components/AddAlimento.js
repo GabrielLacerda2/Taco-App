@@ -42,9 +42,15 @@ export default function AddAlimento(props) {
   const handleAdicionar = () => {
     let errs = Validate();
     setErrors(errs);
-    setIsSubmit(true);
+    console.log(ingrediente)
+    props.food.forEach(element => {
+      console.log(element.description)
+      if(ingrediente == element.description){
+        return setIsSubmit(true);
+      }
+     
+  })
   }
-
   const AdicionarAlimento = ()=>{
     props.setIngredientesReceita([...props.ingredientesReceita,{ingrediente:ingrediente,qtd:qtd}]);
     props.food.map(element =>{
